@@ -22,7 +22,7 @@
 
   
 
-  <title>计算机网络_传输层 | 镜花水月</title>
+  <title>C语言（参考谭浩强版本） | 镜花水月</title>
 
   
 
@@ -96,7 +96,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">计算机网络_传输层</h1>
+          <h1 class="title-wrap">C语言（参考谭浩强版本）</h1>
           <h2 class="title-sub-wrap">
             <strong>番茄酱</strong>
             <span>发布于</span>
@@ -129,16 +129,37 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><hr>
-<hr>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234306.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234412.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234431.png"><br>传输层的两种协议</p>
-<hr>
-<p><strong>UDP协议</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234539.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234602.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234611.png"></p>
-<p><strong>TCP协议</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234655.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234709.png"><br>TCP报文段的首部格式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234759.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234814.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234833.png"></p>
-<p>TCP连接管理<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234905.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234919.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125234948.png"><br>2序号对应–&gt;<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235021.png"><br>冗余ACK(冗余确认)–&gt;<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235032.png"></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235111.png"><br>案例<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235118.png"><br>拥塞控制和流量控制的形象比较<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235148.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235212.png"><br>详细学习可以回顾：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19E411D78Q?p=67">https://www.bilibili.com/video/BV19E411D78Q?p=67</a></p>
+        <h1 id="C语言笔记"><a href="#C语言笔记" class="headerlink" title="C语言笔记"></a>C语言笔记</h1><hr>
+<h2 id="C语言的语言特性、前世今生、相关其他知识"><a href="#C语言的语言特性、前世今生、相关其他知识" class="headerlink" title="C语言的语言特性、前世今生、相关其他知识"></a>C语言的语言特性、前世今生、相关其他知识</h2><p><strong>编译器</strong></p>
+<p>我自身对编译器的理解就是：</p>
+<p>处理器就是高级的机器，智能识别二进制机器码，这个高级机器的架构和操作系统内核必须匹配才能发挥正常作用，因为不同的机器的机器码是不一样的，所以我们需要统一标准的CPU和与之匹配的操作系统，我猜可移植性依赖的就是机器码标准的统一，以及操作系统/编译器/的统一，过程可以有区别，最终形成的机器码应该没差别。</p>
+<p>具体的编译过程和产生的文件和编译器有关，常用的C语言编译器有GCC、MSC等等，非常非常多。</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002603.png"><br><strong>GCC历史</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002655.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002623.png"><br><strong>相关知识、背景</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002732.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002800.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002814.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002825.png"></p>
+<p><strong>编译器的工作（GCC为例）</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002932.png"><br>案例<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002947.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003006.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003014.png"></p>
+<p><strong>可移植性</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003044.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003126.png"></p>
+<h2 id="C语言顺序程序设计"><a href="#C语言顺序程序设计" class="headerlink" title="C语言顺序程序设计"></a>C语言顺序程序设计</h2><p><strong>高级语言中数据类型的两种表现形式：常量和变量</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003304.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003314.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003330.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003344.png"><br><strong>数据类型</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003432.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003446.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003457.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003534.png"></p>
+<p><strong>运算符和表达式</strong><br>C语言运算符汇总</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003625.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003630.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003636.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003642.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003648.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003654.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003723.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003738.png"></p>
+<p><strong>C语句</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003810.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003829.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003851.png"></p>
+<p><strong>数据的输入输出</strong></p>
+<p>相关知识<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003929.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003950.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004008.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004024.png"><br><img src=""></p>
+<h2 id="选择、循环"><a href="#选择、循环" class="headerlink" title="选择、循环"></a>选择、循环</h2><p>各种运算符及表达式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004128.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004219.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004235.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004244.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004258.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004319.png"></p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004348.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004401.png"></p>
+<p>字符数组<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004430.png"></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004456.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004530.png"></p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004637.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004705.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004726.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004741.png"></p>
+<p><strong>数组作为参数</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004813.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004833.png"></p>
+<p><strong>变量</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004900.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004941.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004955.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005017.png"></p>
+<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005131.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005146.png"></p>
+<p><strong>指针和数组</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005233.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005244.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005308.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005326.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005335.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005348.png"></p>
+<p><strong>指针和字符串</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005425.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005439.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005458.png"></p>
+<h2 id="结构体和共用体"><a href="#结构体和共用体" class="headerlink" title="结构体和共用体"></a>结构体和共用体</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005653.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005804.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005837.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005857.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005909.png"></p>
+<p><strong>共用体</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005948.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005958.png"></p>
 
       </section>
 
@@ -151,8 +172,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机网络_应用层</h2>
+        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机网络_网络层</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -166,8 +187,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机网络_数据链路层</h2>
+        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机网络_应用层</h2>
         </a>
       
       <div class="card-text--row">Older</div>
