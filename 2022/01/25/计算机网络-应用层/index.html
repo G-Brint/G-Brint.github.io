@@ -22,7 +22,7 @@
 
   
 
-  <title>计算机网络_数据链路层 | 镜花水月</title>
+  <title>计算机网络_应用层 | 镜花水月</title>
 
   
 
@@ -96,7 +96,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">计算机网络_数据链路层</h1>
+          <h1 class="title-wrap">计算机网络_应用层</h1>
           <h2 class="title-sub-wrap">
             <strong>番茄酱</strong>
             <span>发布于</span>
@@ -129,31 +129,33 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>#数据链路层</p>
-<p>###相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125151312.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125151355.png"></p>
-<p>###数据链路层功能概述<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125152712.png"><br>###封装成帧<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125152752.png"></p>
-<p>##流量控制与可靠传输机制<br>###数据链路层的流量控制<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125152923.png"></p>
-<p>###流量控制的具体方法<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153046.png"></p>
-<p>##信道划分介质访问控制协议( MAC Multiple Access Control)协议<br>前置知识<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153547.png"><br>###介质访问控制<br>介质访问控制的目的与概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153652.png"></p>
-<p>###介质访问控制的分类<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154123.png"><br><strong>静态划分信道</strong><br><strong>【一大类】信道划分介质访问控制</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153829.png"><br><strong>动态划分信道</strong><br><strong>【二大类】轮询访问介质访问控制</strong><br>如何理解动态划分信道：动态控制，多点接入，并非在用户通信时固定分配给用户<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153937.png"><br><strong>【三大类】随机访问介质访问控制</strong><br>算法理解：所有用户都可以随机发送信息<br>发送信息时占用全部带宽</p>
-<p>这种访问控制又可分为三大类，并有三种代表性协议<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154454.png"><br><strong>ALOHA协议（不听就说）</strong><br>纯ALOHA协议<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154507.png"><br>时隙ALOHA协议（效率高）<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154543.png"><br><strong>CMA协议（先听再说）</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154717.png"><br>对监听结果的反映方案<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154740.png"><br>1-坚持CSMA<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154752.png"><br>非坚持CSMA<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154822.png"><br>p-坚持CSMA<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154848.png"><br>三种的总结对比<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154903.png"><br>CSMA设计思想的延续<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155005.png"></p>
-<p>##局域网<br>###相关概念<br>局域网( Local area№ etwork):简称LAN,是指在某一区域内由多台计算机互联成的计算机组,使用广播信道。局域网覆盖了物理层、数据链路层</p>
-<p><strong>局域网的特点</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155213.png"><br><strong>决定上述特点的主要因素（1.网络拓扑 2.传播介质）</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155327.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155337.png"></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155404.png"><br><strong>局域网的介质访问控制</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155551.png"><br><strong>局域网的分类</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155642.png"><br><strong>MAC和LLC到底是什么</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155714.png"><br>##以太网<br>###相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155855.png"><br><strong>以太网的普及</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155927.png"><br><strong>以太网的标准</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155957.png"><br><strong>连接方式</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160042.png"><br><strong>以太网的拓扑结构</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160111.png"><br><strong>常见的以太网</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160146.png"><br><strong>适配器与MAC地址</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160210.png"><br><strong>以太网MAC帧</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160241.png"><br><strong>高速以太网</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160314.png"><br>##IEEE 802.11和无线局域网<br><strong>前置理解</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160431.png"><br>###相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160452.png"><br><strong>IEEE 802.11的MAC帧头模式</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160521.png"><br><strong>无线局域网的分类</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160547.png"></p>
-<p>##广域网&amp;PPP协议和HDLC协议<br>###广域网相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160720.png"><br><strong>PPP协议</strong></p>
-<p>ppp协议需要做的事情<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160845.png"><br>ppp协议不需要做的事情<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160904.png"><br>PPP协议的三个组成部分<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160924.png"><br>PPP协议的过程图解</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160948.png"><br>PPP协议的帧格式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161006.png"><br><strong>HDLC协议</strong><br>概念与特性<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161109.png"><br>HDLC的站<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161147.png"><br>HDLC的帧格式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161210.png"><br>PPP和HDLC对比<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161221.png"><br>##数据链路层设备<br><strong>前置知识</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161415.png"><br>例子讲解</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161352.png"></p>
-<p>场景</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161500.png"><br>存在问题：主机离集线器超过100米就会失真严重，无法恢复</p>
-<p><strong>解决办法</strong></p>
-<p>1.使用光纤</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161604.png"><br>2.集线器扩展</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161629.png"><br>3.网桥扩展以太网————解决集线器扩展的缺点</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161752.png"><br>网桥分类</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161832.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161848.png"></p>
+        <h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><hr>
+<hr>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235414.png"><br><strong>网络应用模型</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235518.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235534.png"></p>
+<p><strong>DNS域名解析系统</strong></p>
+<p>域名:域名和IP地址是一对一对应的<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235627.png"></p>
+<p>域名的不同部分<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235711.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235730.png"></p>
+<p><strong>域名服务器及分层结构</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235810.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235833.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235854.png"></p>
+<p><strong>文件传送协议FTP</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125235953.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000025.png"></p>
+<p><strong>电子邮件系统</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000059.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000144.png"></p>
+<p>网络邮局协议</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000155.png"></p>
+<p>网际报文存取协议MAP</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000225.png"></p>
+<p>基于万维网的电子邮件</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000241.png"><br><strong>万维网</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000334.png"></p>
+<p>HTTP超文本传输协议</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000400.png"></p>
+<p>HTTP协议的特点</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000432.png"><br>HTTP协议的连接方式</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000442.png"></p>
+<p>报文结构<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000502.png"></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000509.png"></p>
+<p>报文例子</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126000532.png"></p>
 
       </section>
 
@@ -166,8 +168,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机网络_应用层</h2>
+        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机网络_传输层</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -181,8 +183,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%89%A9%E7%90%86%E5%B1%82/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机网络_物理层</h2>
+        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机网络_数据链路层</h2>
         </a>
       
       <div class="card-text--row">Older</div>
