@@ -22,7 +22,7 @@
 
   
 
-  <title>计算机网络 | 镜花水月</title>
+  <title>计算机网络_数据链路层 | 镜花水月</title>
 
   
 
@@ -96,11 +96,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">计算机网络</h1>
+          <h1 class="title-wrap">计算机网络_数据链路层</h1>
           <h2 class="title-sub-wrap">
             <strong>番茄酱</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-24T13:55:04.000Z" itemprop="datePublished">2022-01-24</time>
+            <time  class="article-date" datetime="2022-01-25T07:11:26.000Z" itemprop="datePublished">2022-01-25</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -129,46 +129,31 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><p>注：为方便查找翻阅，分开写，此篇为计网的概述</p>
-<h2 id="写在前面（五分钟理解计算机网络全貌）："><a href="#写在前面（五分钟理解计算机网络全貌）：" class="headerlink" title="###写在前面（五分钟理解计算机网络全貌）："></a>###写在前面（五分钟理解计算机网络全貌）：</h2><ul>
-<li><strong>计算机网络协议的理解</strong></li>
-</ul>
-<p>对于计算机网络，我开始会有疑问，为什么可以实现生活中一台电脑和另外一台电脑互联。最初我自己的理解的思路历程或者理解方式是，小时候，可以用两个纸杯，底部用毛线连着，纸杯距离刚好毛线拉直，这样可以一人说话一人听，形成“纸杯毛线电话”。两个设备那也就可以通过电线、电缆、电磁波互联，本质都是频率的信息化符号化。<strong>网络协议就像是毛线电话的语言统一问题</strong>，我讲四川话他讲潮汕话那大概率没法交流。所以机器识别是一样的，我们要统一讲话（发出信息）和听取内容（读取信息）的统一规范，开始是局部的公司和业务的统一，随着信息技术发展得越快越广泛，形成<strong>大家统一的信息规范，就是各种网络协议</strong>。</p>
-<ul>
-<li><strong>逻辑通信和物理通信的理解</strong></li>
-</ul>
-<p><strong>逻辑通信</strong>就是，A国领导人和B国领导人交流，通过各级官员传话，最后达成交流目的的形式。逻辑上是A国领导人和B国领导人达成了交流目的。</p>
-<p><strong>物理通信</strong>就是实际的信息传播途径，如上述的A国领导人下达信息到A国外交负责人。<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125133045.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125134954.png"></p>
-<ul>
-<li><strong>网络硬件设备的理解</strong></li>
-</ul>
-<p>谈话的人多起来，或者距离远起来，我们就需要传话人，就像古代皇帝上朝太监要一个个喊话一样。电缆信号也是，电磁波在超过一定距离以后信号转弱，这就需要电磁波传话人，还可以传给不同的人。</p>
-<p>它们也是计算机的一种，不过是专门负责传话的，有的人只听一个人的然后跟下一个人讲，比如中继器，有的人听一个人或者几个人又要跟多个人讲，比如路由器。</p>
-<p>要实现错综复杂的网络联系就需要各种硬件、线路连通关系的设计，逻辑通信、物理通信结合现实，就显得复杂一些。</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125133901.png"></p>
-<ul>
-<li><strong>网络分层的理解</strong></li>
-</ul>
-<p>物理通信时，上传下达，形式也是要统一的，</p>
-<p>比如A国领导人给下一级官员可以以<strong>口头形式</strong>，下一级官员给下下级就要<strong>发文件</strong>，下下级接到通知，又要<strong>添加一些别的信息</strong>，B国接到通知以后，那些官方的来往正式又冗余，打官腔，但是上传到B过领导人口中就是被他的下一级解读过的话，就是A国领导人想直接告诉B国领导人的话，是“你给我老实点，这个好处必须给我”。回应：“好的好的，不敢不敢”，而底层一些的传播者听到的就是封装过得官腔“两国领导人达成了共识”。</p>
-<p>物理上就是各个电脑互发信息会经过各种中间层设备。然后到电缆、网线、或者空气直接（电磁波信号）传播。具体的分层随着不同的标准，大致有这几种。</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125131514.png"></p>
-<ul>
-<li><strong>而每层之间的纵向通信，也有着一些的标准</strong>（传输单元）<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125131803.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125133228.png"></li>
-</ul>
-<p>##小总结<br>每一层其实都可以看做横向连接，上下连接是封装，横<br>向连接是沟通，每一层都可以看做横向的、直接的沟通。这个思维也是我们以层为划分，研究网络的重要思维，要清楚不同弄层次的通信的基本逻辑是什么。有些协议不仅仅是负责一个层，可能包含不同层，并且在不同层里面，有不同的作用域以及作用。初步学习的需要的理解，就几个核心机理，计算机世界是如何物理实现信息连通的，解连通后各种软件问题，比如协议比如实现流量控制等等。每一层、每一个环节、每一次数据交换，都面临着协议问题，不同的协议，都有除了协议本身要传递的信息以外的的控制信息，比如异步同步之类的，流量控制之类的<br>。理解了大概全貌，学习计算机网络就更有条理性。</p>
-<h2 id="正题开始"><a href="#正题开始" class="headerlink" title="正题开始"></a>正题开始</h2><h2 id="一、计算机网络体系结构"><a href="#一、计算机网络体系结构" class="headerlink" title="一、计算机网络体系结构"></a>一、计算机网络体系结构</h2><p>###计网的概念组成功能和分类<br><strong>计算机网络的概念</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125135835.png"><br><strong>计算机网络的功能</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125135851.png"></p>
-<p><strong>计算机网络的组成</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125135908.png"><br><strong>计算机网络的分类</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125135934.png"><br><strong>计算机网络的标准化及相关组织</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140023.png"></p>
-<p>##计算机网络的性能指标<br><strong>速度相关的指标</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140236.png"><br><strong>时延相关的指标</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140339.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140401.png"></p>
-<p>##计算机网络的分层结构<br><strong>基本理解</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140643.png"><br><strong>分层概况</strong></p>
-<p><strong>7层OSI参考模型（法定标准）</strong></p>
-<hr>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140737.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140857.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140923.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125140957.png"></p>
-<p><strong>4层TCP/IP参考模型（事实标准，大致内容和OSI并无太大差别，不再重复）</strong></p>
-<hr>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125141217.png"><br><strong>5层标准，方便学习的标准</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125141409.png"><br><img src=""></p>
+        <p>#数据链路层</p>
+<p>###相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125151312.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125151355.png"></p>
+<p>###数据链路层功能概述<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125152712.png"><br>###封装成帧<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125152752.png"></p>
+<p>##流量控制与可靠传输机制<br>###数据链路层的流量控制<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125152923.png"></p>
+<p>###流量控制的具体方法<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153046.png"></p>
+<p>##信道划分介质访问控制协议( MAC Multiple Access Control)协议<br>前置知识<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153547.png"><br>###介质访问控制<br>介质访问控制的目的与概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153652.png"></p>
+<p>###介质访问控制的分类<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154123.png"><br><strong>静态划分信道</strong><br><strong>【一大类】信道划分介质访问控制</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153829.png"><br><strong>动态划分信道</strong><br><strong>【二大类】轮询访问介质访问控制</strong><br>如何理解动态划分信道：动态控制，多点接入，并非在用户通信时固定分配给用户<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125153937.png"><br><strong>【三大类】随机访问介质访问控制</strong><br>算法理解：所有用户都可以随机发送信息<br>发送信息时占用全部带宽</p>
+<p>这种访问控制又可分为三大类，并有三种代表性协议<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154454.png"><br><strong>ALOHA协议（不听就说）</strong><br>纯ALOHA协议<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154507.png"><br>时隙ALOHA协议（效率高）<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154543.png"><br><strong>CMA协议（先听再说）</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154717.png"><br>对监听结果的反映方案<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154740.png"><br>1-坚持CSMA<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154752.png"><br>非坚持CSMA<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154822.png"><br>p-坚持CSMA<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154848.png"><br>三种的总结对比<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125154903.png"><br>CSMA设计思想的延续<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155005.png"></p>
+<p>##局域网<br>###相关概念<br>局域网( Local area№ etwork):简称LAN,是指在某一区域内由多台计算机互联成的计算机组,使用广播信道。局域网覆盖了物理层、数据链路层</p>
+<p><strong>局域网的特点</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155213.png"><br><strong>决定上述特点的主要因素（1.网络拓扑 2.传播介质）</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155327.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155337.png"></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155404.png"><br><strong>局域网的介质访问控制</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155551.png"><br><strong>局域网的分类</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155642.png"><br><strong>MAC和LLC到底是什么</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155714.png"><br>##以太网<br>###相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155855.png"><br><strong>以太网的普及</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155927.png"><br><strong>以太网的标准</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125155957.png"><br><strong>连接方式</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160042.png"><br><strong>以太网的拓扑结构</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160111.png"><br><strong>常见的以太网</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160146.png"><br><strong>适配器与MAC地址</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160210.png"><br><strong>以太网MAC帧</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160241.png"><br><strong>高速以太网</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160314.png"><br>##IEEE 802.11和无线局域网<br><strong>前置理解</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160431.png"><br>###相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160452.png"><br><strong>IEEE 802.11的MAC帧头模式</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160521.png"><br><strong>无线局域网的分类</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160547.png"></p>
+<p>##广域网&amp;PPP协议和HDLC协议<br>###广域网相关概念<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160720.png"><br><strong>PPP协议</strong></p>
+<p>ppp协议需要做的事情<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160845.png"><br>ppp协议不需要做的事情<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160904.png"><br>PPP协议的三个组成部分<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160924.png"><br>PPP协议的过程图解</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125160948.png"><br>PPP协议的帧格式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161006.png"><br><strong>HDLC协议</strong><br>概念与特性<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161109.png"><br>HDLC的站<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161147.png"><br>HDLC的帧格式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161210.png"><br>PPP和HDLC对比<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161221.png"><br>##数据链路层设备<br><strong>前置知识</strong></p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161415.png"><br>例子讲解</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161352.png"></p>
+<p>场景</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161500.png"><br>存在问题：主机离集线器超过100米就会失真严重，无法恢复</p>
+<p><strong>解决办法</strong></p>
+<p>1.使用光纤</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161604.png"><br>2.集线器扩展</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161629.png"><br>3.网桥扩展以太网————解决集线器扩展的缺点</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161752.png"><br>网桥分类</p>
+<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161832.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220125161848.png"></p>
 
       </section>
 
@@ -176,20 +161,20 @@
       
         <nav class="article-nav">
           
+          
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2022/01/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机组成原理</h2>
+        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%89%A9%E7%90%86%E5%B1%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机网络物理层</h2>
         </a>
       
-      <div class="card-text--row">Newer</div>
+      <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
           
         </nav>
       
