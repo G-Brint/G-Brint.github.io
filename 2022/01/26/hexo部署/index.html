@@ -22,7 +22,7 @@
 
   
 
-  <title>C语言（参考谭浩强版本） | 镜花水月</title>
+  <title>镜花水月</title>
 
   
 
@@ -96,11 +96,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">C语言（参考谭浩强版本）</h1>
+          <h1 class="title-wrap"></h1>
           <h2 class="title-sub-wrap">
             <strong>番茄酱</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-25T07:11:26.000Z" itemprop="datePublished">2022-01-25</time>
+            <time  class="article-date" datetime="2022-01-26T05:25:16.210Z" itemprop="datePublished">2022-01-26</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -129,43 +129,45 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="C语言笔记"><a href="#C语言笔记" class="headerlink" title="C语言笔记"></a>C语言笔记</h1><hr>
-<h2 id="C语言的语言特性、前世今生、相关其他知识"><a href="#C语言的语言特性、前世今生、相关其他知识" class="headerlink" title="C语言的语言特性、前世今生、相关其他知识"></a>C语言的语言特性、前世今生、相关其他知识</h2><p><strong>编译器</strong></p>
-<p>我自身对编译器的理解就是：</p>
-<p>处理器就是高级的机器，智能识别二进制机器码，这个高级机器的架构和操作系统内核必须匹配才能发挥正常作用，因为不同的机器的机器码是不一样的，所以我们需要统一标准的CPU和与之匹配的操作系统，我猜可移植性依赖的就是机器码标准的统一，以及操作系统/编译器/的统一，过程可以有区别，最终形成的机器码应该没差别。</p>
-<p>具体的编译过程和产生的文件和编译器有关，常用的C语言编译器有GCC、MSC等等，非常非常多。</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002603.png"><br><strong>GCC历史</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002655.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002623.png"><br><strong>相关知识、背景</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002732.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002800.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002814.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002825.png"></p>
-<p><strong>编译器的工作（GCC为例）</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002932.png"><br>案例<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126002947.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003006.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003014.png"></p>
-<p><strong>可移植性</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003044.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003126.png"></p>
-<h2 id="C语言顺序程序设计"><a href="#C语言顺序程序设计" class="headerlink" title="C语言顺序程序设计"></a>C语言顺序程序设计</h2><p><strong>高级语言中数据类型的两种表现形式：常量和变量</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003304.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003314.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003330.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003344.png"><br><strong>数据类型</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003432.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003446.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003457.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003534.png"></p>
-<p><strong>运算符和表达式</strong><br>C语言运算符汇总</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003625.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003630.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003636.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003642.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003648.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003654.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003723.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003738.png"></p>
-<p><strong>C语句</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003810.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003829.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003851.png"></p>
-<p><strong>数据的输入输出</strong></p>
-<p>相关知识<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003929.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126003950.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004008.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004024.png"><br><img src=""></p>
-<h2 id="选择、循环"><a href="#选择、循环" class="headerlink" title="选择、循环"></a>选择、循环</h2><p>各种运算符及表达式<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004128.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004219.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004235.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004244.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004258.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004319.png"></p>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004348.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004401.png"></p>
-<p>字符数组<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004430.png"></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004456.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004530.png"></p>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004637.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004705.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004726.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004741.png"></p>
-<p><strong>数组作为参数</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004813.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004833.png"></p>
-<p><strong>变量</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004900.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004941.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126004955.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005017.png"></p>
-<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005131.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005146.png"></p>
-<p><strong>指针和数组</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005233.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005244.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005308.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005326.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005335.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005348.png"></p>
-<p><strong>指针和字符串</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005425.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005439.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005458.png"></p>
-<h2 id="结构体和共用体"><a href="#结构体和共用体" class="headerlink" title="结构体和共用体"></a>结构体和共用体</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005653.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005804.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005837.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005857.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005909.png"></p>
-<p><strong>共用体</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005948.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220126005958.png"></p>
+        <h2 id="—-安装Nodejs以及镜像"><a href="#—-安装Nodejs以及镜像" class="headerlink" title="—    #安装Nodejs以及镜像"></a>—    #安装Nodejs以及镜像</h2><hr>
+<p> 安装包安装nodejs此处省略</p>
+<p>node -v    #查看node版本</p>
+<p>npm -v    #查看npm版本</p>
+<p>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>    #安装淘宝的cnpm 镜像管理器</p>
+<p>cnpm -v    #查看cnpm版本<br>安装hexo框架</p>
+<hr>
+<hr>
+<p>cnpm install -g hexo-cli    #安装hexo框架</p>
+<p>hexo -v    #查看hexo版本</p>
+<p>mkdir blog    #创建blog目录</p>
+<h2 id="如果崩了，删库，然后从这里开始"><a href="#如果崩了，删库，然后从这里开始" class="headerlink" title="如果崩了，删库，然后从这里开始"></a>如果崩了，删库，然后从这里开始</h2><hr>
+<p>cd blog     #进入blog目录</p>
+<p>hexo init     #生成博客 初始化博客</p>
+<p>hexo s    #启动本地博客服务</p>
+<p><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址测试</p>
+<h2 id="远程部署"><a href="#远程部署" class="headerlink" title="远程部署"></a>远程部署</h2><hr>
+<p>Github创建一个新的仓库<br>YourGithubName.github.io</p>
+<p>###下载git部署组件到blog与bolg配合<br>cnpm install –save hexo-deployer-git</p>
+<p>###关键设置（联通）</p>
+<p>配置blog目录下的_config.yml </p>
+<p>deploy:</p>
+<pre><code>  type: git
+ repo: 复制仓库的SSH
+branch: master
+</code></pre>
+<p>hexo d #部署到Github仓库里</p>
+<p>hexo n “计算机第一篇” #创建新的文章 （会产生一个带头信息的md文件）</p>
+<p>hexo s  #本地预览</p>
+<p>hexo clean #清理</p>
+<p>hexo g #生成</p>
+<p>hexo d    #部署到Github仓库里（正常情况第一次会弹出来输入密码）</p>
 
       </section>
 
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -174,21 +176,6 @@
       
         <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">计算机网络_网络层</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2022/01/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机网络_传输层</h2>
         </a>
       
       <div class="card-text--row">Older</div>
