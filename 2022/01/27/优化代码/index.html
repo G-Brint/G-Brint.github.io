@@ -22,7 +22,7 @@
 
   
 
-  <title>操作系统_进程管理 | 镜花水月</title>
+  <title>优雅的代码习惯是如何养成的 | 镜花水月</title>
 
   
 
@@ -96,11 +96,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">操作系统_进程管理</h1>
+          <h1 class="title-wrap">优雅的代码习惯是如何养成的</h1>
           <h2 class="title-sub-wrap">
             <strong>番茄酱</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-27T14:16:57.000Z" itemprop="datePublished">2022-01-27</time>
+            <time  class="article-date" datetime="2022-01-27T13:39:09.000Z" itemprop="datePublished">2022-01-27</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -129,37 +129,11 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="进程的概述"><a href="#进程的概述" class="headerlink" title="进程的概述"></a><strong>进程的概述</strong></h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127221754.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127221854.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127221912.png"><br><strong>进程的状态与转换</strong></p>
-<hr>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127221936.png"><br><strong>进程控制</strong></p>
-<hr>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222008.png"></p>
-<p><strong>如何实现————原语（原子操作）</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222321.png"><br><strong>这个过程有脏读危险，所以只能用原子操作，自然是内核权限（特权指令）</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222429.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222444.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222458.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222518.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222532.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127222601.png"><br>进程通信</p>
-<hr>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223038.png"><br><strong>共享存储</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223101.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223107.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223121.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223128.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223145.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223158.png"></p>
-<h2 id="线程、多线程模型"><a href="#线程、多线程模型" class="headerlink" title="线程、多线程模型"></a>线程、多线程模型</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223301.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223311.png"></p>
-<p><strong>线程的实现方式</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223342.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223348.png"></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223404.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223415.png"></p>
-<p>他们的映射关系<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223438.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223455.png"></p>
-<p>多对一</p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223559.png"></p>
-<p>一对一<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223609.png"></p>
-<p>多对多<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223626.png"></p>
-<h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223709.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223741.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223758.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223822.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223833.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223848.png"></p>
-<p><strong>几种调度的区别联系一览表</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223910.png"></p>
-<h2 id="进程调度"><a href="#进程调度" class="headerlink" title="进程调度"></a>进程调度</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127223950.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224031.png"></p>
-<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><p><strong>调度算法的评价指标</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224146.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224242.png"></p>
-<p><strong>调度算法要注意的学习思路</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224306.png"><br>(不展开了，用到再查)<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224327.png"></p>
-<h2 id="进程异同步及互斥"><a href="#进程异同步及互斥" class="headerlink" title="进程异同步及互斥"></a>进程异同步及互斥</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224434.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224443.png"><br><strong>硬件实现</strong></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224555.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224609.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224617.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224622.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224635.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224642.png"></p>
-<h2 id="信号量机制"><a href="#信号量机制" class="headerlink" title="信号量机制"></a>信号量机制</h2><p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224710.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224727.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224756.png"><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224806.png"></p>
-<p><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224829.png"><br><strong>原语逻辑</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224848.png"><br>例子<br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224909.png"><br><strong>总结及补充</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224931.png"><br><strong>重点分析</strong><br><img src="https://gitee.com/Jxy_1_2014492793/blog-image/raw/master/Image/20220127224950.png"></p>
-<h2 id="肝不动了。。。等后面继续"><a href="#肝不动了。。。等后面继续" class="headerlink" title="肝不动了。。。等后面继续"></a>肝不动了。。。等后面继续</h2><h2 id="信号量机制实现进程互斥"><a href="#信号量机制实现进程互斥" class="headerlink" title="信号量机制实现进程互斥"></a>信号量机制实现进程互斥</h2><h2 id="进程管理的应用问题"><a href="#进程管理的应用问题" class="headerlink" title="进程管理的应用问题"></a>进程管理的应用问题</h2><h2 id="管程"><a href="#管程" class="headerlink" title="管程"></a>管程</h2><h2 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h2><p><img src=""><br><img src=""><br><img src=""></p>
+        <p>有时候，想探究源码时，如果对于一个框架、工具没有一定熟练度，是很难有很高效率的去自己翻源码的，费神费力，收益/精力 比并不会太高。</p>
+<p>这时候会想到去阅读一些博客，或者找好一些学习视频。但是我发现好像，很多源码博客也好、视频也好，我个人理解只能说是限于工作流程的“背诵”，没有涉及更多的吸收，很多时候只是从一个阅读者的视角去看。少有吸收最终内化成自己的代码风格。</p>
+<p>但也许是我的狭隘，可能众多高手并不屑于写博客而是领悟和实践、变现。所谓原理实际上更重要的是设计者的设计思想，代码流程仅仅是思想的体现，是对外呈现的东西。理解框架的设计思想是为了更好的将设计者的设计理念吸收，在未来的工作中实践并应用。代码写好了，合适的耦合度、结构，带来的更好的健壮性和可读性。</p>
+<p>比如能看懂一些设计模式，尽量用于自己的工作学习。</p>
+<p>遇到一些重复代码、耦合代码，如果能预见或者重构还来得及，尽量优化一下代码结构，是个很好的选择。比如运用多态、常见的一些设计模式。</p>
 
       </section>
 
@@ -167,14 +141,28 @@
       
         <nav class="article-nav">
           
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2022/01/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">操作系统_进程管理</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2022/01/27/%E4%BC%98%E5%8C%96%E4%BB%A3%E7%A0%81/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">优雅的代码习惯是如何养成的</h2>
+        <a href="/2022/01/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">操作系统概述</h2>
         </a>
       
       <div class="card-text--row">Older</div>
